@@ -1,0 +1,39 @@
+Dataset:
+Dataset is collected from Kaggle including IMDB movie reviews as per requirement.
+Had two columns `reviews` and `sentiment` and 50000 observations in total. No null values observed as well as dataset is equally balanced for both the available classes.
+
+Preprocessing:
+Preprocessing involved cleaning the reviews as they contained lots of un necessary html tags, stop words, punctuation marks and make the dataset in lowercase.
+
+Model:
+Compared the different model`s results and found out that Random Forest really did well as 
+Confusion matrix is like below.
+Model	Accuracy	Precision 	Recall	F1-Score	Confusion Matrix
+Naïve Bayes	0.6565
+	0.6643
+	0.6565
+	0.6552
+	[[697 255]
+ [431 614]]
+
+Random Forests	0.8302
+	0.8306
+	0.8302
+	0.8303
+	[[793 159]
+ [180 865]]
+
+SVM	0.8282
+	0.8286
+	0.8282
+	0.8283
+	[[792 160]
+ [183 862]]
+
+
+
+Challenges Faced:
+Data became too large after the feature engineering part, so due to limited hardware and computing resources needed to slice the data.
+
+
+
